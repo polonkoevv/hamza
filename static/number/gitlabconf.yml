@@ -1,0 +1,25 @@
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  APP_NAME: "YourAppName"
+
+before_script:
+  - echo "Setting up environment..."
+
+build:
+  stage: build
+  script:
+    - echo "Building the application..."
+
+test:
+  stage: test
+  script:
+    - echo "Running tests..."
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the application..."
